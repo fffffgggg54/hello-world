@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main()
 {
- int f, c;
- int l, u, s;
+ float f, c;
+ float l, u, s;
  l = 0;
  u = 300;
  s = 20;
@@ -10,7 +10,7 @@ int main()
  while (f <= u)
  {
   c = 5 * (f-32) / 9;
-  printf("%d\t%d\n", f, c);
+  printf("%3.0f %6.1f\n", f, c);
   f = f + s;
  }
 }

@@ -12,7 +12,7 @@ int main()
  while (f <= u)
  {
   c = 5 * (f-32) / 9;
-  printf("%3.0f %6.1f\n", f, c);
+  printf("%3.0f f %6.1f c\n", f, c);
   f = f + s;
  }
 }

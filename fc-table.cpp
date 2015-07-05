@@ -7,6 +7,8 @@ int main()
  u = 300;
  s = 20;
  f = l;
+ puts("conversion table");
+
  while (f <= u)
  {
   c = 5 * (f-32) / 9;

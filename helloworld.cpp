@@ -12,4 +12,5 @@ int text()
 int main()
 {
  text();
+ return 0;
 }

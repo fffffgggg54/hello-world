@@ -14,22 +14,20 @@ main()
 	    ++nl;
 	if (c == ' ' || c == '\n' || c == '\t') {
 
-            if(state == IN)
-            {
-             printf("\n");
-            }
+	    if (state == IN) {
+		printf("\n");
+	    }
 	    state = OUT;
-            
-            
-        } 
-	else if (state == OUT) {
+
+
+	} else if (state == OUT) {
 	    state = IN;
 	    ++nw;
-            
+
 	}
-	if(state == IN){
+	if (state == IN) {
 	    printf("%c", c);
-        }
+	}
 
     }
     printf("%d lines %d words %d charactars \n", nl, nw, nc);

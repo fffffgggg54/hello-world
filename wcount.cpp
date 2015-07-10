@@ -18,11 +18,10 @@ int main()
 	    state = OUT;
 	} else if (state == OUT) {
 	    state = IN;
-	    ++nw;
+	    
 	}
 	if (state == IN) {
 	    printf("%c", c);
 	}
     }
-    printf("%d lines %d words %d charactars \n", nl, nw, nc);
 }

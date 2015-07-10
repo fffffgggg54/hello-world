@@ -9,7 +9,6 @@ void main ()
   wordCount = charCount = currLen = 0;
   while ((keyInput = getchar ()) != EOF)
     {
-      ++charCount;
       if (keyInput == ' ' || keyInput == '\n' || keyInput == '\t')
       {
 	state = OUT;
@@ -17,15 +16,16 @@ void main ()
       else if (state == OUT)
 	{
 	  state = IN;
+          charCount = charCount + (currLen + 1);
           currLen = 0;
 	  ++wordCount;
 	}
        if(state == IN)
          {
             currLen++;
-         }
-       
+         }      
     }
+  
   printf ("\n%d average\n", charCount / wordCount);
 }
 
